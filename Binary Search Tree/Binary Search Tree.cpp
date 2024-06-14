@@ -30,5 +30,9 @@ public:
         newNode->info = element;
         newNode->leftchild = nullptr;
         newNode->rightchild = nullptr;
+
+        Node* parent = nullptr;
+        Node* currentNode = nullptr;
+        search(element, parent, currentNode);
     }
 };
