@@ -35,17 +35,22 @@ public:
         Node* currentNode = nullptr;
         search(element, parent, currentNode);
 
-        if (parent == nullptr) 
+        if (parent == nullptr)
         {
-            ROOT = newNode; 
-            return; 
+            ROOT = newNode;
+            return;
         }
 
         if (element < parent->info) {
             parent->leftchild = newNode;
         }
-        else if (element > parent->info) // 
+        else if (element > parent->info)
         {
-            parent->rightchild = newNode; // 
+            parent->rightchild = newNode;
+        }
+    }
+
+        void search(string element, Node * &parent, Node * &currentNode) {
+
         }
 };
