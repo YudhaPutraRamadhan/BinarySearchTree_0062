@@ -26,6 +26,6 @@ public:
     }
 
     void insert(string element) {
-
+        Node* newNode = new Node(element, nullptr, nullptr);
     }
 };
